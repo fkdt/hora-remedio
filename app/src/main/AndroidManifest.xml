@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.robotrock.horaremedio">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MyTheme">
+        <activity
+            android:name="br.com.robotrock.horaremedio.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.robotrock.horaremedio.SecondActivity"
+            android:label="@string/title_activity_second">
+        </activity>
+        <activity android:name="br.com.robotrock.horaremedio.ListaRemedios"
+            android:theme="@style/Theme.MyTheme">
+        </activity>
+        <activity android:name="br.com.robotrock.horaremedio.CadRemedio"
+            android:theme="@style/Theme.MyTheme">
+        </activity>
+    </application>
+
+</manifest>

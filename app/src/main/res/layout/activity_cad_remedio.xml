@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    tools:context=".CadRemedio">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tt_cad_remedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="24dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="24dp"
+        android:text="Cadastrar Remédio"
+        android:textColor="@color/material_deep_teal_500"
+        android:textSize="30sp" />
+
+    <!-- NOME -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/in_layout_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tt_cad_remedio"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/in_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Medicamento" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- TIPO DOSAGEM -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/in_layout_tipo_dosagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_layout_nome"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/in_tipo_dosagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo de Dosagem" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- TEMPO TRATAMENTO -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/in_layout_tempo_tratamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_layout_tipo_dosagem"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/in_tempo_tratamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempo de Tratamento" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Dose -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/in_layout_dose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_layout_tempo_tratamento"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/in_dose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Dose" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Intervalo -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/in_layout_intervalo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_layout_dose"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/in_intervalo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Intervalo" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Quantidade -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/in_layout_quantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_layout_intervalo"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/in_quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Quantidade" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_insereMedicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_layout_quantidade"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:text="Adicionar"
+        android:theme="@style/Theme.Button">
+    </android.support.v7.widget.AppCompatButton>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_deleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_layout_quantidade"
+        android:layout_toRightOf="@id/btn_insereMedicamento"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:text="Deleta"
+        android:theme="@style/Theme.Button">
+    </android.support.v7.widget.AppCompatButton>
+
+</RelativeLayout>
